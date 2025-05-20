@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mudassir Hasni | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=1500&q=80') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 80px 0;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease-in-out;
+    }
+    .footer {
+      background-color: #212529;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mudassir Hasni</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Hi, I'm Mudassir Hasni</h1>
+      <p>Full-Stack Web Developer | Problem Solver | Innovator</p>
+      <a href="#projects" class="btn btn-outline-light mt-4">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container text-center">
+      <h2 class="mb-4">About Me</h2>
+      <p class="lead">I am a self-driven developer who thrives in dynamic environments. With a strong foundation in web development and a passion for learning, I love building responsive, scalable, and user-friendly applications.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Skills</h2>
+      <div class="row text-center">
+        <div class="col-md-3 mb-4">
+          <i class="fab fa-html5 fa-3x text-primary"></i>
+          <h5 class="mt-3">HTML5</h5>
+        </div>
+        <div class="col-md-3 mb-4">
+          <i class="fab fa-css3-alt fa-3x text-info"></i>
+          <h5 class="mt-3">CSS3</h5>
+        </div>
+        <div class="col-md-3 mb-4">
+          <i class="fab fa-js-square fa-3x text-warning"></i>
+          <h5 class="mt-3">JavaScript</h5>
+        </div>
+        <div class="col-md-3 mb-4">
+          <i class="fab fa-bootstrap fa-3x text-purple"></i>
+          <h5 class="mt-3">Bootstrap</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title">Responsive Portfolio</h5>
+              <p class="card-text">A personal portfolio built with HTML, CSS, and Bootstrap showcasing professional work.</p>
+              <a href="#" class="btn btn-outline-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title">Todo App</h5>
+              <p class="card-text">A fully functional Todo list app with local storage and filtering capabilities.</p>
+              <a href="#" class="btn btn-outline-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title">Weather App</h5>
+              <p class="card-text">A JavaScript-powered weather forecast application using real-time API data.</p>
+              <a href="#" class="btn btn-outline-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Contact Me</h2>
+      <form class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Write your message..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Mudassir Hasni </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
